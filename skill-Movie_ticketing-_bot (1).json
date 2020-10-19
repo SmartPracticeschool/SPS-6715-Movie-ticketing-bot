@@ -1,0 +1,1480 @@
+{
+  "intents": [
+    {
+      "intent": "booking",
+      "examples": [
+        {
+          "text": "book my ticket"
+        },
+        {
+          "text": "order"
+        },
+        {
+          "text": "take my order of tickets"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "enquiry",
+      "examples": [
+        {
+          "text": "what are the movies to watch?"
+        },
+        {
+          "text": "what are the seat categories?"
+        },
+        {
+          "text": "what is the price of ticket?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hi"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "add_on",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cold drinks",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ice cream",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pop corn",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "booking",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "booking",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "add_on",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "movies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "price",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "seat_availability",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "seat_category",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "show_time",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "ga",
+            "gd aftrnun"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "gd evning",
+            "ge"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gm",
+            "gud mrning"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "movies",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Bengali",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "border",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "ET",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gujrati",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Step Up",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "swades",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Tamil",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "three idiots",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cash",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "seat_availability",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gold class",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "platinum class",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "silver class",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "seat_category",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "gold class",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "platinum class",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "silver class",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "show_time",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "11am",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "12:30pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "1pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "2pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "3:30pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "3pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "5pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "6pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "7:30pm",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "8pm",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_4_1602866889536",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_4_1602866889536",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602867059449",
+      "previous_sibling": "node_8_1602868391280"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "which movie would you like to see?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_7_1602867060621",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602867060641",
+      "previous_sibling": "handler_2_1602867060641"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1602930533292",
+      "context": {
+        "show_time": "@show_time"
+      },
+      "conditions": "@show_time",
+      "event_name": "input",
+      "dialog_node": "handler_1_1602930533300"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1602867060621",
+      "context": {
+        "movies": "@movies"
+      },
+      "conditions": "@movies",
+      "event_name": "input",
+      "dialog_node": "handler_2_1602867060641"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "how many tickets"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_10_1602867185882",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1602867185887",
+      "previous_sibling": "handler_4_1602867185887"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "what is your preferred time"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_8_1602930533292",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1602930533300",
+      "previous_sibling": "handler_1_1602930533300"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_10_1602867185882",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_4_1602867185887"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "what is your preferred mode of payment?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_3_1602867256200",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1602867256204",
+      "previous_sibling": "handler_9_1602867256204"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_6_1602867315035",
+      "context": {
+        "add_on": "@add_on"
+      },
+      "conditions": "@add_on",
+      "event_name": "input",
+      "dialog_node": "handler_4_1602867315040"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Please tell the preferred seat category "
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1602867503154",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1602867503160",
+      "previous_sibling": "handler_8_1602867503160"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "would you like to take any add ons?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_6_1602867315035",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1602867315041",
+      "previous_sibling": "handler_4_1602867315040"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602867503154",
+      "context": {
+        "seat_category": "@seat_category"
+      },
+      "conditions": "@seat_category",
+      "event_name": "input",
+      "dialog_node": "handler_8_1602867503160"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1602867256200",
+      "context": {
+        "payment": "@payment"
+      },
+      "conditions": "@payment",
+      "event_name": "input",
+      "dialog_node": "handler_9_1602867256204"
+    },
+    {
+      "type": "standard",
+      "title": "enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#enquiry || @enquiry",
+      "dialog_node": "node_2_1602861845108",
+      "previous_sibling": "node_6_1602861695824"
+    },
+    {
+      "type": "standard",
+      "title": "add_on",
+      "parent": "node_2_1602861845108",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@add_on",
+      "dialog_node": "node_2_1602931663209",
+      "previous_sibling": "node_9_1602926178105"
+    },
+    {
+      "type": "standard",
+      "title": "mail id",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "thanks for giving your mail id $email"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_4_1602861465315"
+    },
+    {
+      "type": "frame",
+      "title": "booking",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thanks. Your $number tickets booked for $show_time of $movies with $add_on.  You can pay the amount with $payment .You can use $email for further references."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#booking && @booking:booking",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1602866889536",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1602861845108",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#greetings || @greetings",
+      "dialog_node": "node_6_1602861695824",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "deleting context",
+      "output": {
+        "deleted": "<?context.remove('movies')?><?context.remove('number')?><?context.remove('seat_category')?><?context.remove('price')?><?context.remove('payment')?><?context.remove('email')?><?context.remove('show_time')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602866889536",
+      "conditions": "true",
+      "dialog_node": "node_8_1602868391280"
+    },
+    {
+      "type": "standard",
+      "title": "movies",
+      "parent": "node_2_1602861845108",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@movies",
+      "dialog_node": "node_9_1602926178105"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "price seat category wise for weekdays",
+            "options": [
+              {
+                "label": "silver class",
+                "value": {
+                  "input": {
+                    "text": "200/-"
+                  }
+                }
+              },
+              {
+                "label": "gold class",
+                "value": {
+                  "input": {
+                    "text": "250/-"
+                  }
+                }
+              },
+              {
+                "label": "platinum class",
+                "value": {
+                  "input": {
+                    "text": "350/-"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "price seat category wise on weekends",
+            "options": [
+              {
+                "label": "silver class",
+                "value": {
+                  "input": {
+                    "text": "250/-"
+                  }
+                }
+              },
+              {
+                "label": "gold class",
+                "value": {
+                  "input": {
+                    "text": "300/-"
+                  }
+                }
+              },
+              {
+                "label": "platinum class",
+                "value": {
+                  "input": {
+                    "text": "450/-"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602861845108",
+      "conditions": "@enquiry:price",
+      "dialog_node": "response_2_1602866567307",
+      "previous_sibling": "response_4_1602866452921"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "two scoops:250/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602931663209",
+      "conditions": "@add_on:(ice cream)",
+      "dialog_node": "response_2_1602931756026",
+      "previous_sibling": "response_9_1602931726728"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good afternoon"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602861695824",
+      "conditions": "@greetings:(good afternoon)",
+      "dialog_node": "response_3_1602861793690",
+      "previous_sibling": "response_4_1602861774168"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "seat category",
+            "options": [
+              {
+                "label": "silver class",
+                "value": {
+                  "input": {
+                    "text": "1st and 2nd row from screen"
+                  }
+                }
+              },
+              {
+                "label": "gold class",
+                "value": {
+                  "input": {
+                    "text": "3rd and 4th row from screen"
+                  }
+                }
+              },
+              {
+                "label": "platinum class",
+                "value": {
+                  "input": {
+                    "text": "5th row from screen"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602861845108",
+      "conditions": "@enquiry:seat_category",
+      "dialog_node": "response_3_1602865977187",
+      "previous_sibling": "node_2_1602931663209"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "availability of seats",
+            "options": [
+              {
+                "label": "silver class: 50",
+                "value": {
+                  "input": {
+                    "text": "silver class : 50"
+                  }
+                }
+              },
+              {
+                "label": "gold class : 30",
+                "value": {
+                  "input": {
+                    "text": "gold class : 30"
+                  }
+                }
+              },
+              {
+                "label": "platinum class : 10",
+                "value": {
+                  "input": {
+                    "text": "platinum class :10"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602861845108",
+      "conditions": "@enquiry:seat_availability",
+      "dialog_node": "response_3_1602866108404",
+      "previous_sibling": "response_3_1602865977187"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good evening"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602861695824",
+      "conditions": "@greetings:(good evening)",
+      "dialog_node": "response_4_1602861774168",
+      "previous_sibling": "response_5_1602861737021"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602861695824",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1602861813545",
+      "previous_sibling": "response_3_1602861793690"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "show timings",
+            "options": [
+              {
+                "label": "11am",
+                "value": {
+                  "input": {
+                    "text": "11am"
+                  }
+                }
+              },
+              {
+                "label": "12:30pm",
+                "value": {
+                  "input": {
+                    "text": "12:30pm"
+                  }
+                }
+              },
+              {
+                "label": "1pm",
+                "value": {
+                  "input": {
+                    "text": "1pm"
+                  }
+                }
+              },
+              {
+                "label": "2pm",
+                "value": {
+                  "input": {
+                    "text": "2pm"
+                  }
+                }
+              },
+              {
+                "label": "3:30pm",
+                "value": {
+                  "input": {
+                    "text": "3:30pm"
+                  }
+                }
+              },
+              {
+                "label": "3pm",
+                "value": {
+                  "input": {
+                    "text": "3pm"
+                  }
+                }
+              },
+              {
+                "label": "5pm",
+                "value": {
+                  "input": {
+                    "text": "5pm"
+                  }
+                }
+              },
+              {
+                "label": "6pm",
+                "value": {
+                  "input": {
+                    "text": "6pm"
+                  }
+                }
+              },
+              {
+                "label": "7:30pm",
+                "value": {
+                  "input": {
+                    "text": "7:30pm"
+                  }
+                }
+              },
+              {
+                "label": "8pm",
+                "value": {
+                  "input": {
+                    "text": "8pm"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602861845108",
+      "conditions": "@enquiry:show_time",
+      "dialog_node": "response_4_1602866195324",
+      "previous_sibling": "response_3_1602866108404"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "add on",
+            "options": [
+              {
+                "label": "pop corn",
+                "value": {
+                  "input": {
+                    "text": "pop corn"
+                  }
+                }
+              },
+              {
+                "label": "cold drinks",
+                "value": {
+                  "input": {
+                    "text": "cold drinks"
+                  }
+                }
+              },
+              {
+                "label": "ice cream",
+                "value": {
+                  "input": {
+                    "text": "ice cream"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602861845108",
+      "conditions": "@enquiry:add_on",
+      "dialog_node": "response_4_1602866452921",
+      "previous_sibling": "response_4_1602866195324"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "show :11am,2pm,8pm. \n\nprice for weekdays: \nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nprice for weekends: \nsilver class Rs.250/-,\ngold class Rs.300/-,\nplatinum class Rs.450/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:(three idiots)",
+      "dialog_node": "response_4_1602926484997"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "show:5pm,\n\nprice for weekdays:\nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nprice for weekends: \nsilver class Rs.250/-,\ngold class Rs.300/-,\nplatinum class Rs.450/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:swades",
+      "dialog_node": "response_4_1602926543858",
+      "previous_sibling": "response_4_1602926484997"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Only Monday: 6pm\n\nprice : \nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10\n"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:Bengali",
+      "dialog_node": "response_4_1602926935683",
+      "previous_sibling": "response_7_1602926860992"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Only Thursday: 6pm\n\nprice: \nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:Gujrati",
+      "dialog_node": "response_4_1602926975259",
+      "previous_sibling": "response_4_1602926935683"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Hindi movies",
+            "options": [
+              {
+                "label": "three idiots",
+                "value": {
+                  "input": {
+                    "text": "three idiots"
+                  }
+                }
+              },
+              {
+                "label": "swades",
+                "value": {
+                  "input": {
+                    "text": "swades"
+                  }
+                }
+              },
+              {
+                "label": "border",
+                "value": {
+                  "input": {
+                    "text": "border"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "English movies",
+            "options": [
+              {
+                "label": "ET",
+                "value": {
+                  "input": {
+                    "text": "ET"
+                  }
+                }
+              },
+              {
+                "label": "Step Up",
+                "value": {
+                  "input": {
+                    "text": "Step Up"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "title": "Regional",
+            "options": [
+              {
+                "label": "Bengali",
+                "value": {
+                  "input": {
+                    "text": "Bengali"
+                  }
+                }
+              },
+              {
+                "label": "Tamil",
+                "value": {
+                  "input": {
+                    "text": "Tamil"
+                  }
+                }
+              },
+              {
+                "label": "Gujrati",
+                "value": {
+                  "input": {
+                    "text": "Gujrati"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1602861845108",
+      "conditions": "@enquiry:movies",
+      "dialog_node": "response_4_1602927225810",
+      "previous_sibling": "response_2_1602866567307"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602861695824",
+      "conditions": "@greetings:(good morning)",
+      "dialog_node": "response_5_1602861737021"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Only Wednesday: 6pm.\n\nprice: \nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10"
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:Tamil",
+      "dialog_node": "response_5_1602927005530",
+      "previous_sibling": "response_4_1602926975259"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "show:1pm,3pm.\n\nprice for weekdays: \nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nprice for weekends: \nsilver class Rs.250/-,\ngold class Rs.300/-,\nplatinum class Rs.450/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "multiline"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:border",
+      "dialog_node": "response_6_1602926724834",
+      "previous_sibling": "response_4_1602926543858"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "show: 12:30pm, 3:30pm.\n\nprice for weekdays: \nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nprice for weekends: \nsilver class Rs.250/-,\ngold class Rs.300/-,\nplatinum class Rs.450/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:ET",
+      "dialog_node": "response_7_1602926799078",
+      "previous_sibling": "response_6_1602926724834"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "show: 7:30pm\n\nprice for weekdays: \nsilver class Rs.200/-,\ngold class Rs.250/-,\nplatinum class Rs.350/-\n\nprice for weekends:\nsilver class Rs.250/-,\ngold class Rs.300/-,\nplatinum class Rs.450/-\n\nseat availability: \nsilver class-50\ngold class-30\nplatinum-10"
+              },
+              {
+                "text": ""
+              },
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1602926178105",
+      "conditions": "@movies:(Step Up)",
+      "dialog_node": "response_7_1602926860992",
+      "previous_sibling": "response_7_1602926799078"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "small:150/-,medium:200/-,large:300/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602931663209",
+      "conditions": "@add_on:(pop corn)",
+      "dialog_node": "response_7_1602931685448"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602866889536",
+      "disabled": true,
+      "conditions": "@movies",
+      "dialog_node": "response_9_1602866997120",
+      "previous_sibling": "slot_3_1602867256200"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "small:100/-,medium:150/-,large:200/-"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602931663209",
+      "conditions": "@add_on:(cold drinks)",
+      "dialog_node": "response_9_1602931726728",
+      "previous_sibling": "response_7_1602931685448"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602866889536",
+      "variable": "$number",
+      "dialog_node": "slot_10_1602867185882",
+      "previous_sibling": "slot_7_1602867060621"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602866889536",
+      "variable": "$seat_category",
+      "dialog_node": "slot_2_1602867503154",
+      "previous_sibling": "slot_8_1602930533292"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602866889536",
+      "variable": "$payment",
+      "dialog_node": "slot_3_1602867256200",
+      "previous_sibling": "slot_6_1602867315035"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602866889536",
+      "variable": "$add_on",
+      "dialog_node": "slot_6_1602867315035",
+      "previous_sibling": "slot_2_1602867503154"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602866889536",
+      "variable": "$movies",
+      "dialog_node": "slot_7_1602867060621",
+      "previous_sibling": "handler_1_1602867059449"
+    },
+    {
+      "type": "slot",
+      "parent": "node_4_1602866889536",
+      "variable": "$show_time",
+      "dialog_node": "slot_8_1602930533292",
+      "previous_sibling": "slot_10_1602867185882"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello.  I'm movie ticketing bot able to provide you details of movies and book your tickets. Please provide your mail Id for future reference."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome || @email",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Movie_ticketing _bot",
+  "language": "en",
+  "description": ""
+}
